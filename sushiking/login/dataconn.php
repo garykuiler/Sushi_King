@@ -1,6 +1,6 @@
 <?php
-require_once '../php/xssSecurity.php';
 require_once '../db/connect.php';
+require_once '../php/xssSecurity.php';
 
 $sql = 'SELECT * FROM reserveringen';
 $statement = $handler->prepare($sql);
@@ -27,7 +27,7 @@ $reserveringen = $statement -> fetchAll(PDO::FETCH_OBJ);
             <th>datum</th>
             <th>opmerking</th>
             <th colspan="2"></th>
-            <th><a href="login.php">Log out</th>
+            <th><a href="../login.php">Log out</th>
         </tr>
         <?php
         //reads array and puts in table

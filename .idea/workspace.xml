@@ -26,19 +26,94 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8e187ab5-6b93-4100-aa43-17c56edc2ab7" name="Default Changelist" comment="Xss beveiliging toegevoegd met de file php/xssSecurity.php. Bij data dat geoutput wordt moet de functie e($voorbeeld) gebruikt voor voor xss beveiliging.&#10;In de file dataconn.php is het met pdo weergegeven en is er een delete button toegevoegd.">
-      <change afterPath="$PROJECT_DIR$/sushiking/php/updreserveringmailer.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sushiking/includes/dbh.inc.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sushiking/includes/functions.inc.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sushiking/includes/login.inc.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sushiking/includes/signup.inc.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sushiking/login.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sushiking/php/composer.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sushiking/php/composer.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sushiking/php/vendor/autoload.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sushiking/php/vendor/composer/ClassLoader.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sushiking/php/vendor/composer/InstalledVersions.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sushiking/php/vendor/composer/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sushiking/php/vendor/composer/autoload_classmap.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sushiking/php/vendor/composer/autoload_namespaces.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sushiking/php/vendor/composer/autoload_psr4.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sushiking/php/vendor/composer/autoload_real.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sushiking/php/vendor/composer/autoload_static.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sushiking/php/vendor/composer/installed.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sushiking/php/vendor/composer/installed.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sushiking/php/vendor/composer/platform_check.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sushiking/php/vendor/phpmailer/phpmailer/COMMITMENT" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sushiking/php/vendor/phpmailer/phpmailer/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sushiking/php/vendor/phpmailer/phpmailer/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sushiking/php/vendor/phpmailer/phpmailer/SECURITY.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sushiking/php/vendor/phpmailer/phpmailer/VERSION" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sushiking/php/vendor/phpmailer/phpmailer/composer.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sushiking/php/vendor/phpmailer/phpmailer/get_oauth_token.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sushiking/php/vendor/phpmailer/phpmailer/language/phpmailer.lang-af.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sushiking/php/vendor/phpmailer/phpmailer/language/phpmailer.lang-ar.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sushiking/php/vendor/phpmailer/phpmailer/language/phpmailer.lang-az.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sushiking/php/vendor/phpmailer/phpmailer/language/phpmailer.lang-ba.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sushiking/php/vendor/phpmailer/phpmailer/language/phpmailer.lang-be.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sushiking/php/vendor/phpmailer/phpmailer/language/phpmailer.lang-bg.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sushiking/php/vendor/phpmailer/phpmailer/language/phpmailer.lang-ca.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sushiking/php/vendor/phpmailer/phpmailer/language/phpmailer.lang-ch.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sushiking/php/vendor/phpmailer/phpmailer/language/phpmailer.lang-cs.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sushiking/php/vendor/phpmailer/phpmailer/language/phpmailer.lang-da.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sushiking/php/vendor/phpmailer/phpmailer/language/phpmailer.lang-de.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sushiking/php/vendor/phpmailer/phpmailer/language/phpmailer.lang-el.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sushiking/php/vendor/phpmailer/phpmailer/language/phpmailer.lang-eo.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sushiking/php/vendor/phpmailer/phpmailer/language/phpmailer.lang-es.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sushiking/php/vendor/phpmailer/phpmailer/language/phpmailer.lang-et.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sushiking/php/vendor/phpmailer/phpmailer/language/phpmailer.lang-fa.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sushiking/php/vendor/phpmailer/phpmailer/language/phpmailer.lang-fi.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sushiking/php/vendor/phpmailer/phpmailer/language/phpmailer.lang-fo.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sushiking/php/vendor/phpmailer/phpmailer/language/phpmailer.lang-fr.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sushiking/php/vendor/phpmailer/phpmailer/language/phpmailer.lang-gl.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sushiking/php/vendor/phpmailer/phpmailer/language/phpmailer.lang-he.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sushiking/php/vendor/phpmailer/phpmailer/language/phpmailer.lang-hi.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sushiking/php/vendor/phpmailer/phpmailer/language/phpmailer.lang-hr.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sushiking/php/vendor/phpmailer/phpmailer/language/phpmailer.lang-hu.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sushiking/php/vendor/phpmailer/phpmailer/language/phpmailer.lang-hy.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sushiking/php/vendor/phpmailer/phpmailer/language/phpmailer.lang-id.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sushiking/php/vendor/phpmailer/phpmailer/language/phpmailer.lang-it.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sushiking/php/vendor/phpmailer/phpmailer/language/phpmailer.lang-ja.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sushiking/php/vendor/phpmailer/phpmailer/language/phpmailer.lang-ka.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sushiking/php/vendor/phpmailer/phpmailer/language/phpmailer.lang-ko.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sushiking/php/vendor/phpmailer/phpmailer/language/phpmailer.lang-lt.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sushiking/php/vendor/phpmailer/phpmailer/language/phpmailer.lang-lv.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sushiking/php/vendor/phpmailer/phpmailer/language/phpmailer.lang-mg.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sushiking/php/vendor/phpmailer/phpmailer/language/phpmailer.lang-ms.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sushiking/php/vendor/phpmailer/phpmailer/language/phpmailer.lang-nb.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sushiking/php/vendor/phpmailer/phpmailer/language/phpmailer.lang-nl.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sushiking/php/vendor/phpmailer/phpmailer/language/phpmailer.lang-pl.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sushiking/php/vendor/phpmailer/phpmailer/language/phpmailer.lang-pt.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sushiking/php/vendor/phpmailer/phpmailer/language/phpmailer.lang-pt_br.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sushiking/php/vendor/phpmailer/phpmailer/language/phpmailer.lang-ro.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sushiking/php/vendor/phpmailer/phpmailer/language/phpmailer.lang-ru.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sushiking/php/vendor/phpmailer/phpmailer/language/phpmailer.lang-sk.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sushiking/php/vendor/phpmailer/phpmailer/language/phpmailer.lang-sl.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sushiking/php/vendor/phpmailer/phpmailer/language/phpmailer.lang-sr.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sushiking/php/vendor/phpmailer/phpmailer/language/phpmailer.lang-sv.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sushiking/php/vendor/phpmailer/phpmailer/language/phpmailer.lang-tl.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sushiking/php/vendor/phpmailer/phpmailer/language/phpmailer.lang-tr.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sushiking/php/vendor/phpmailer/phpmailer/language/phpmailer.lang-uk.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sushiking/php/vendor/phpmailer/phpmailer/language/phpmailer.lang-vi.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sushiking/php/vendor/phpmailer/phpmailer/language/phpmailer.lang-zh.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sushiking/php/vendor/phpmailer/phpmailer/language/phpmailer.lang-zh_cn.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sushiking/php/vendor/phpmailer/phpmailer/src/Exception.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sushiking/php/vendor/phpmailer/phpmailer/src/OAuth.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sushiking/php/vendor/phpmailer/phpmailer/src/PHPMailer.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sushiking/php/vendor/phpmailer/phpmailer/src/POP3.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sushiking/php/vendor/phpmailer/phpmailer/src/SMTP.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sushiking/signup.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sushiking/aanpassen.php" beforeDir="false" afterPath="$PROJECT_DIR$/sushiking/aanpassen.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sushiking/bevestiging.php" beforeDir="false" afterPath="$PROJECT_DIR$/sushiking/bevestiging.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sushiking/css/Opmaak.css" beforeDir="false" afterPath="$PROJECT_DIR$/sushiking/css/Opmaak.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sushiking/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/sushiking/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sushiking/login/dataconn.php" beforeDir="false" afterPath="$PROJECT_DIR$/sushiking/login/dataconn.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sushiking/login/delete.php" beforeDir="false" afterPath="$PROJECT_DIR$/sushiking/login/delete.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sushiking/php/delete.php" beforeDir="false" afterPath="$PROJECT_DIR$/sushiking/php/delete.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sushiking/login/login.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sushiking/login/signup.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/sushiking/php/reserveringmailer.php" beforeDir="false" afterPath="$PROJECT_DIR$/sushiking/php/reserveringmailer.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sushiking/php/update.php" beforeDir="false" afterPath="$PROJECT_DIR$/sushiking/php/update.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sushiking/php/xssSecurity.php" beforeDir="false" afterPath="$PROJECT_DIR$/sushiking/php/xssSecurity.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sushiking/verwijderen.php" beforeDir="false" afterPath="$PROJECT_DIR$/sushiking/verwijderen.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,11 +161,15 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1kq3PFiPUdLYGLfRiZ5L8pWhEUm" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -110,11 +189,11 @@
       <recent name="D:\XAMPP\htdocs\Sushi_KingReserveringssysteem\sushiking" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\Sushi_King\sushiking" />
+      <recent name="C:\xampp\htdocs\Sushi_King\sushiking\login" />
       <recent name="D:\XAMPP\htdocs\Sushi_KingReserveringssysteem\login\css" />
       <recent name="D:\XAMPP\htdocs\Sushi_KingReserveringssysteem\sushiking" />
       <recent name="D:\XAMPP\htdocs\Sushi_KingReserveringssysteem" />
-      <recent name="D:\XAMPP\htdocs\Sushi_KingReserveringssysteem\sushiking\verwijderen" />
-      <recent name="D:\XAMPP\htdocs\Sushi_KingReserveringssysteem\sushiking\bevestigen" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -148,6 +227,12 @@
       <workItem from="1610996674114" duration="1651000" />
       <workItem from="1611072856389" duration="1185000" />
       <workItem from="1611134648446" duration="6012000" />
+      <workItem from="1611144195419" duration="3498000" />
+      <workItem from="1611575970305" duration="1821000" />
+      <workItem from="1612171807029" duration="2468000" />
+      <workItem from="1612873376282" duration="43000" />
+      <workItem from="1614765314694" duration="652000" />
+      <workItem from="1617137165500" duration="12594000" />
     </task>
     <task id="LOCAL-00001" summary="changed readme test">
       <created>1606414603339</created>
@@ -299,6 +384,7 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="changed readme test" />
     <MESSAGE value="testing git" />
     <MESSAGE value="Een code om informatie aan de database toe te voegen,dit moet nog wel gestroomlijnd worden maar het doel was vooral een connectie te maken en iets toe te voegen" />
@@ -315,19 +401,5 @@
     <MESSAGE value="Ik heb de tijden verandert" />
     <MESSAGE value="Xss beveiliging toegevoegd met de file php/xssSecurity.php. Bij data dat geoutput wordt moet de functie e($voorbeeld) gebruikt voor voor xss beveiliging.&#10;In de file dataconn.php is het met pdo weergegeven en is er een delete button toegevoegd." />
     <option name="LAST_COMMIT_MESSAGE" value="Xss beveiliging toegevoegd met de file php/xssSecurity.php. Bij data dat geoutput wordt moet de functie e($voorbeeld) gebruikt voor voor xss beveiliging.&#10;In de file dataconn.php is het met pdo weergegeven en is er een delete button toegevoegd." />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="-1253" y="168" key="#PHP" timestamp="1610993189713">
-      <screen x="-1920" y="5" width="1920" height="1040" />
-    </state>
-    <state x="-1253" y="168" key="#PHP/0.0.1920.1040/-1920.5.1920.1040@-1920.5.1920.1040" timestamp="1610993189713" />
-    <state x="804" y="459" key="NewPhpFileDialog" timestamp="1610997016694">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="804" y="459" key="NewPhpFileDialog/0.0.1920.1040/-1920.5.1920.1040@0.0.1920.1040" timestamp="1610997016694" />
-    <state x="-1143" y="439" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1610993205895">
-      <screen x="-1920" y="5" width="1920" height="1040" />
-    </state>
-    <state x="-1143" y="439" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040/-1920.5.1920.1040@-1920.5.1920.1040" timestamp="1610993205895" />
   </component>
 </project>
