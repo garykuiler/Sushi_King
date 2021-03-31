@@ -1,5 +1,5 @@
 <?php session_start(); ?>
-<?php require_once 'db/connect.php'; ?>
+<?php require_once 'includes/dbh.inc.php'; ?>
 <?php require_once 'php/add.php';?>
 
 <!DOCTYPE html>
@@ -19,6 +19,7 @@
         <a href="https://www.mountainspring-sushiking.nl/menukaart">MENUKAART</a>
         <a href="https://www.mountainspring-sushiking.nl/bezorgen">BEZORGEN</a>
         <a href=https://www.mountainspring-sushiking.nl/bezorgen>CONTACT</a>
+        <a href=login.php>Log in</a>
         <a class="active" href="winkelmandje">Winkelmandje</a>
     </nav>
     <div id="titel">

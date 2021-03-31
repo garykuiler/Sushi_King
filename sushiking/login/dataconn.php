@@ -1,9 +1,25 @@
 <?php
     session_start();
-    require_once '../includes/dbh.inc.php';
-    require_once  '../php/xssSecurity.php';
-?>
+    if (!isset($_SESSION["userUid"])) {
+        header("location: ../login.php");
+    }
+        require_once '../includes/dbh.inc.php';
+        require_once  '../php/xssSecurity.php';
 
+        //selects everything from commission table
+        $query = "SELECT * FROM reserveringen";
+        $result = mysqli_query($conn, $query);
+
+        //make an array called commissions
+        $commissions = [];
+
+        //fetch result and put it in array
+        while ($row = mysqli_fetch_assoc($result)){
+            $commissions[] = $row;
+        }
+        mysqli_close($conn);
+?>
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="UTF-8">
@@ -27,25 +43,21 @@
             <th><a href="../includes/logout.inc.php">Log out</th>
         </tr>
         <?php
-        if (isset($_SESSION["userUid"])) {
-
-            $sql = "SELECT * FROM reserveringen";
-            $result = mysqli_query($conn, $sql);
-
-            if (mysqli_num_rows($result) > 0) {
-                // output data of each row
-                while ($row = mysqli_fetch_assoc($result)) {
-                    echo "<tr><td>" . e($row["id"]) . "</td><td>" . e($row["naam"]) . "</td><td>" . e($row["telefoonnummer"]) . "</td><td>" . e($row["tijd"]) . "</td><td>" . e($row["datum"]) . "</td><td>" . e($row["personen"]) . "</td><td>" . e($row["email"]) . "</td><td>" . e($row["opmerking"]) . '</td><td><a href="../aanpassen.php?id="' . e($row["id"]) .
-                        ">Edit</a></td><td><a href='../login/delete.php?id='" . e($row["id"]) . ">Delete</a></td></tr>";
-                }
-            } else {
-                echo "0 results";
-            }
-
-        } else {
-            echo "Not logged in";
-        }
-        ?>
+        //reads array and puts in table
+        foreach($commissions as $value){ ?>
+            <tr>
+                <td><?= htmlentities($value["id"])?></td>
+                <td><?= htmlentities($value["naam"])?></td>
+                <td><?= htmlentities($value["telefoonnummer"])?></td>
+                <td><?= htmlentities($value["datum"])?></td>
+                <td><?= htmlentities($value["tijd"])?></td>
+                <td><?= htmlentities($value["personen"])?></td>
+                <td><?= htmlentities($value["email"])?></td>
+                <td><?= htmlentities($value["opmerking"])?></td>
+                <td><a href="../aanpassen.php?id=<?= $value['id'] ?>">Edit</a></td>
+                <td><a href="delete.php?id=<?= $value['id'] ?>">Delete</a></td>
+            </tr>
+        <?php } ?>
     </table>
     </form>
 </div>

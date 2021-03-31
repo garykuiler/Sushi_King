@@ -1,5 +1,5 @@
 <?php session_start(); ?>
-<?php require_once 'db/connect.php'; ?>
+<?php require_once 'includes/dbh.inc.php'; ?>
 <?php require_once 'php/update.php';?>
 <!DOCTYPE html>
 <html>
@@ -36,6 +36,7 @@
             </div>
             <label for="tijd">Tijd:</label>
             <select id="tijd" name="updTijd">
+                <option value="<?= htmlentities($commissions['tijd']) ?>"><?= htmlentities($commissions['tijd']) ?></option>
                 <option value="12:00">12:00</option>
                 <option value="13:00">13:00</option>
                 <option value="14:00">14:00</option>
@@ -47,6 +48,7 @@
             <br>
             <label for="personen">personen:</label>
             <select id="personen" name="updPersonen">
+                <option value="<?= htmlentities($commissions['personen']) ?>"><?= htmlentities($commissions['personen']) ?></option>
                 <option value=1>1 persoon</option>
                 <option value=2">2 personen</option>
                 <option value=3">3 personen</option>
@@ -61,24 +63,25 @@
             <div>
                 <label for="name">Naam:</label>
 
-                <input type="text" id="naam" name="updNaam" required>
+                <input type="text" id="naam" name="updNaam" value="<?= htmlentities($commissions['naam']) ?>" required>
             </div>
             <div>
                 <label for="telefoonnummer">Telefoonnummer:</label>
 
-                <input type="tel" id="telefoonnummer" name="updTelefoonnummer" required>
+                <input type="tel" id="telefoonnummer" name="updTelefoonnummer" value="<?= htmlentities($commissions['telefoonnummer']) ?>" required>
             </div>
             <div>
                 <label for="email">Email:</label>
 
-                <input type="email" id="email" name="updEmail" required>
+                <input type="email" id="email" name="updEmail" value="<?= htmlentities($commissions['email']) ?>" required>
             </div>
             <div>
                 <label for="opmerking">Opmerking:</label>
 
-                <textarea type="text" id="opmerking" name="updOpmerking" cols="30" rows="5" maxlength="50"></textarea>
+                <textarea type="text" id="opmerking" name="updOpmerking" cols="30" rows="5" maxlength="50"><?= htmlentities($commissions['opmerking']) ?></textarea>
             </div>
             <div class="knop">
+                <input type="hidden" name="id" value="<?= $id ?>"/>
                 <input type="submit" name="submit" value="Aanpassen" />
             </div>
         </form>

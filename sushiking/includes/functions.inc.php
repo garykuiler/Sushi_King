@@ -57,7 +57,7 @@ function uidExist($conn, $username, $email) {
 
     mysqli_stmt_close($stmt);
 }
-
+//creates user account
 function createUser($conn, $name, $email, $username, $pwd) {
     $sql = "INSERT INTO admin (userName, userEmail, userUid, userPwd) VALUES (?, ?, ?, ?);";
     $stmt = mysqli_stmt_init($conn);
