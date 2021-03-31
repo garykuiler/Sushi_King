@@ -1,5 +1,7 @@
+<?php session_start(); ?>
 <?php require_once 'db/connect.php'; ?>
 <?php require_once 'php/add.php';?>
+
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/html">
 <head>

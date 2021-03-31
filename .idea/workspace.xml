@@ -25,95 +25,23 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8e187ab5-6b93-4100-aa43-17c56edc2ab7" name="Default Changelist" comment="Xss beveiliging toegevoegd met de file php/xssSecurity.php. Bij data dat geoutput wordt moet de functie e($voorbeeld) gebruikt voor voor xss beveiliging.&#10;In de file dataconn.php is het met pdo weergegeven en is er een delete button toegevoegd.">
-      <change afterPath="$PROJECT_DIR$/sushiking/includes/dbh.inc.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sushiking/includes/functions.inc.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sushiking/includes/login.inc.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sushiking/includes/signup.inc.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sushiking/login.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sushiking/php/composer.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sushiking/php/composer.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sushiking/php/vendor/autoload.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sushiking/php/vendor/composer/ClassLoader.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sushiking/php/vendor/composer/InstalledVersions.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sushiking/php/vendor/composer/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sushiking/php/vendor/composer/autoload_classmap.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sushiking/php/vendor/composer/autoload_namespaces.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sushiking/php/vendor/composer/autoload_psr4.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sushiking/php/vendor/composer/autoload_real.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sushiking/php/vendor/composer/autoload_static.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sushiking/php/vendor/composer/installed.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sushiking/php/vendor/composer/installed.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sushiking/php/vendor/composer/platform_check.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sushiking/php/vendor/phpmailer/phpmailer/COMMITMENT" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sushiking/php/vendor/phpmailer/phpmailer/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sushiking/php/vendor/phpmailer/phpmailer/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sushiking/php/vendor/phpmailer/phpmailer/SECURITY.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sushiking/php/vendor/phpmailer/phpmailer/VERSION" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sushiking/php/vendor/phpmailer/phpmailer/composer.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sushiking/php/vendor/phpmailer/phpmailer/get_oauth_token.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sushiking/php/vendor/phpmailer/phpmailer/language/phpmailer.lang-af.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sushiking/php/vendor/phpmailer/phpmailer/language/phpmailer.lang-ar.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sushiking/php/vendor/phpmailer/phpmailer/language/phpmailer.lang-az.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sushiking/php/vendor/phpmailer/phpmailer/language/phpmailer.lang-ba.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sushiking/php/vendor/phpmailer/phpmailer/language/phpmailer.lang-be.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sushiking/php/vendor/phpmailer/phpmailer/language/phpmailer.lang-bg.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sushiking/php/vendor/phpmailer/phpmailer/language/phpmailer.lang-ca.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sushiking/php/vendor/phpmailer/phpmailer/language/phpmailer.lang-ch.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sushiking/php/vendor/phpmailer/phpmailer/language/phpmailer.lang-cs.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sushiking/php/vendor/phpmailer/phpmailer/language/phpmailer.lang-da.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sushiking/php/vendor/phpmailer/phpmailer/language/phpmailer.lang-de.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sushiking/php/vendor/phpmailer/phpmailer/language/phpmailer.lang-el.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sushiking/php/vendor/phpmailer/phpmailer/language/phpmailer.lang-eo.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sushiking/php/vendor/phpmailer/phpmailer/language/phpmailer.lang-es.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sushiking/php/vendor/phpmailer/phpmailer/language/phpmailer.lang-et.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sushiking/php/vendor/phpmailer/phpmailer/language/phpmailer.lang-fa.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sushiking/php/vendor/phpmailer/phpmailer/language/phpmailer.lang-fi.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sushiking/php/vendor/phpmailer/phpmailer/language/phpmailer.lang-fo.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sushiking/php/vendor/phpmailer/phpmailer/language/phpmailer.lang-fr.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sushiking/php/vendor/phpmailer/phpmailer/language/phpmailer.lang-gl.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sushiking/php/vendor/phpmailer/phpmailer/language/phpmailer.lang-he.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sushiking/php/vendor/phpmailer/phpmailer/language/phpmailer.lang-hi.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sushiking/php/vendor/phpmailer/phpmailer/language/phpmailer.lang-hr.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sushiking/php/vendor/phpmailer/phpmailer/language/phpmailer.lang-hu.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sushiking/php/vendor/phpmailer/phpmailer/language/phpmailer.lang-hy.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sushiking/php/vendor/phpmailer/phpmailer/language/phpmailer.lang-id.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sushiking/php/vendor/phpmailer/phpmailer/language/phpmailer.lang-it.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sushiking/php/vendor/phpmailer/phpmailer/language/phpmailer.lang-ja.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sushiking/php/vendor/phpmailer/phpmailer/language/phpmailer.lang-ka.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sushiking/php/vendor/phpmailer/phpmailer/language/phpmailer.lang-ko.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sushiking/php/vendor/phpmailer/phpmailer/language/phpmailer.lang-lt.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sushiking/php/vendor/phpmailer/phpmailer/language/phpmailer.lang-lv.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sushiking/php/vendor/phpmailer/phpmailer/language/phpmailer.lang-mg.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sushiking/php/vendor/phpmailer/phpmailer/language/phpmailer.lang-ms.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sushiking/php/vendor/phpmailer/phpmailer/language/phpmailer.lang-nb.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sushiking/php/vendor/phpmailer/phpmailer/language/phpmailer.lang-nl.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sushiking/php/vendor/phpmailer/phpmailer/language/phpmailer.lang-pl.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sushiking/php/vendor/phpmailer/phpmailer/language/phpmailer.lang-pt.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sushiking/php/vendor/phpmailer/phpmailer/language/phpmailer.lang-pt_br.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sushiking/php/vendor/phpmailer/phpmailer/language/phpmailer.lang-ro.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sushiking/php/vendor/phpmailer/phpmailer/language/phpmailer.lang-ru.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sushiking/php/vendor/phpmailer/phpmailer/language/phpmailer.lang-sk.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sushiking/php/vendor/phpmailer/phpmailer/language/phpmailer.lang-sl.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sushiking/php/vendor/phpmailer/phpmailer/language/phpmailer.lang-sr.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sushiking/php/vendor/phpmailer/phpmailer/language/phpmailer.lang-sv.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sushiking/php/vendor/phpmailer/phpmailer/language/phpmailer.lang-tl.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sushiking/php/vendor/phpmailer/phpmailer/language/phpmailer.lang-tr.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sushiking/php/vendor/phpmailer/phpmailer/language/phpmailer.lang-uk.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sushiking/php/vendor/phpmailer/phpmailer/language/phpmailer.lang-vi.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sushiking/php/vendor/phpmailer/phpmailer/language/phpmailer.lang-zh.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sushiking/php/vendor/phpmailer/phpmailer/language/phpmailer.lang-zh_cn.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sushiking/php/vendor/phpmailer/phpmailer/src/Exception.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sushiking/php/vendor/phpmailer/phpmailer/src/OAuth.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sushiking/php/vendor/phpmailer/phpmailer/src/PHPMailer.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sushiking/php/vendor/phpmailer/phpmailer/src/POP3.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sushiking/php/vendor/phpmailer/phpmailer/src/SMTP.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sushiking/signup.php" afterDir="false" />
+    <list default="true" id="8e187ab5-6b93-4100-aa43-17c56edc2ab7" name="Default Changelist" comment="Sign up gemaakt voor de login systeem.&#10; &#10; Ik ben overgestapt naar Msqli omdat ik niet precies weet hoe ik GOED tegen sql injecties kan beschermen met PDO. &#10; &#10;Een database connect pagina gemaakt &quot;includes/dbh.in.php&quot; en een signup page &quot;signup/php&quot;.&#10;&#10;&quot;includes/function.inc.php&quot; staan de functies &#10;die de gegevens checkt of het is &#10;ingevuld en een functie die het in de data base toevoegd.">
+      <change afterPath="$PROJECT_DIR$/sushiking/includes/logout.inc.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sushiking/aanpassen.php" beforeDir="false" afterPath="$PROJECT_DIR$/sushiking/aanpassen.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sushiking/bevestiging.php" beforeDir="false" afterPath="$PROJECT_DIR$/sushiking/bevestiging.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sushiking/includes/dbh.inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/sushiking/includes/dbh.inc.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sushiking/includes/functions.inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/sushiking/includes/functions.inc.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sushiking/includes/login.inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/sushiking/includes/login.inc.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sushiking/includes/signup.inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/sushiking/includes/signup.inc.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sushiking/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/sushiking/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sushiking/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/sushiking/login.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sushiking/login/dataconn.php" beforeDir="false" afterPath="$PROJECT_DIR$/sushiking/login/dataconn.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sushiking/login/login.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sushiking/login/signup.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sushiking/php/reserveringmailer.php" beforeDir="false" afterPath="$PROJECT_DIR$/sushiking/php/reserveringmailer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sushiking/login/delete.php" beforeDir="false" afterPath="$PROJECT_DIR$/sushiking/login/delete.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sushiking/php/add.php" beforeDir="false" afterPath="$PROJECT_DIR$/sushiking/php/add.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sushiking/php/delete.php" beforeDir="false" afterPath="$PROJECT_DIR$/sushiking/php/delete.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sushiking/signup.php" beforeDir="false" afterPath="$PROJECT_DIR$/sushiking/signup.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sushiking/verwijderen.php" beforeDir="false" afterPath="$PROJECT_DIR$/sushiking/verwijderen.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -232,7 +160,7 @@
       <workItem from="1612171807029" duration="2468000" />
       <workItem from="1612873376282" duration="43000" />
       <workItem from="1614765314694" duration="652000" />
-      <workItem from="1617137165500" duration="12594000" />
+      <workItem from="1617137165500" duration="26173000" />
     </task>
     <task id="LOCAL-00001" summary="changed readme test">
       <created>1606414603339</created>
@@ -353,7 +281,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610978417025</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Sign up gemaakt voor de login systeem.&#10; &#10; Ik ben overgestapt naar Msqli omdat ik niet precies weet hoe ik GOED tegen sql injecties kan beschermen met PDO. &#10; &#10;Een database connect pagina gemaakt &quot;includes/dbh.in.php&quot; en een signup page &quot;signup/php&quot;.&#10;&#10;&quot;includes/function.inc.php&quot; staan de functies &#10;die de gegevens checkt of het is &#10;ingevuld en een functie die het in de data base toevoegd.">
+      <created>1617150206946</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1617150206946</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -400,6 +335,7 @@
     <MESSAGE value="Ik heb de database viewer gemaakt" />
     <MESSAGE value="Ik heb de tijden verandert" />
     <MESSAGE value="Xss beveiliging toegevoegd met de file php/xssSecurity.php. Bij data dat geoutput wordt moet de functie e($voorbeeld) gebruikt voor voor xss beveiliging.&#10;In de file dataconn.php is het met pdo weergegeven en is er een delete button toegevoegd." />
-    <option name="LAST_COMMIT_MESSAGE" value="Xss beveiliging toegevoegd met de file php/xssSecurity.php. Bij data dat geoutput wordt moet de functie e($voorbeeld) gebruikt voor voor xss beveiliging.&#10;In de file dataconn.php is het met pdo weergegeven en is er een delete button toegevoegd." />
+    <MESSAGE value="Sign up gemaakt voor de login systeem.&#10; &#10; Ik ben overgestapt naar Msqli omdat ik niet precies weet hoe ik GOED tegen sql injecties kan beschermen met PDO. &#10; &#10;Een database connect pagina gemaakt &quot;includes/dbh.in.php&quot; en een signup page &quot;signup/php&quot;.&#10;&#10;&quot;includes/function.inc.php&quot; staan de functies &#10;die de gegevens checkt of het is &#10;ingevuld en een functie die het in de data base toevoegd." />
+    <option name="LAST_COMMIT_MESSAGE" value="Sign up gemaakt voor de login systeem.&#10; &#10; Ik ben overgestapt naar Msqli omdat ik niet precies weet hoe ik GOED tegen sql injecties kan beschermen met PDO. &#10; &#10;Een database connect pagina gemaakt &quot;includes/dbh.in.php&quot; en een signup page &quot;signup/php&quot;.&#10;&#10;&quot;includes/function.inc.php&quot; staan de functies &#10;die de gegevens checkt of het is &#10;ingevuld en een functie die het in de data base toevoegd." />
   </component>
 </project>

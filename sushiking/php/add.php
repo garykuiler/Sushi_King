@@ -1,7 +1,7 @@
 <?php
 //voegt form toe aan de database
 if(isset($_POST['submit'])) {
-    $naam = $_POST['naam'];
+    $naam = mysqli_real_escape_string($conn, $_POST['naam']);
     $telefoonnummer = $_POST['telefoonnummer'] ;
     $datum = $_POST['datum'];
     $tijd = $_POST['tijd'];

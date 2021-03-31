@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <?php require_once 'db/connect.php'; ?>
 <?php require_once 'php/delete.php'; ?>
 <!DOCTYPE html>

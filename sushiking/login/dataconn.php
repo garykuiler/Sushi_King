@@ -1,12 +1,9 @@
 <?php
-require_once '../db/connect.php';
-require_once '../php/xssSecurity.php';
-
-$sql = 'SELECT * FROM reserveringen';
-$statement = $handler->prepare($sql);
-$statement -> execute();
-$reserveringen = $statement -> fetchAll(PDO::FETCH_OBJ);
+    session_start();
+    require_once '../includes/dbh.inc.php';
+    require_once  '../php/xssSecurity.php';
 ?>
+
 <html>
 <head>
     <meta charset="UTF-8">
@@ -26,27 +23,29 @@ $reserveringen = $statement -> fetchAll(PDO::FETCH_OBJ);
             <th>tijd</th>
             <th>datum</th>
             <th>opmerking</th>
-            <th colspan="2"></th>
-            <th><a href="../login.php">Log out</th>
+            <th colspan="4"></th>
+            <th><a href="../includes/logout.inc.php">Log out</th>
         </tr>
         <?php
-        //reads array and puts in table
-        foreach($reserveringen as $value){ ?>
-        <tr>
-            <td><?= e($value->id)?></td>
-            <td><?= e($value->naam)?></td>
-            <td><?= e($value->telefoonnummer)?></td>
-            <td><?= e($value->email)?></td>
-            <td><?= e($value->personen)?></td>
-            <td><?= e($value->tijd)?></td>
-            <td><?= e($value->datum)?></td>
-            <td><?= e($value->opmerking)?></td>
-            <td><a href="../aanpassen.php?id=<?= e($value->id) ?>">Edit</a></td>
-            <td>
-                <a href="../login/delete.php?id=<?= e($value->id) ?>">Delete</a>
-            </td>
-        </tr>
-        <?php } ?>
+        if (isset($_SESSION["userUid"])) {
+
+            $sql = "SELECT * FROM reserveringen";
+            $result = mysqli_query($conn, $sql);
+
+            if (mysqli_num_rows($result) > 0) {
+                // output data of each row
+                while ($row = mysqli_fetch_assoc($result)) {
+                    echo "<tr><td>" . e($row["id"]) . "</td><td>" . e($row["naam"]) . "</td><td>" . e($row["telefoonnummer"]) . "</td><td>" . e($row["tijd"]) . "</td><td>" . e($row["datum"]) . "</td><td>" . e($row["personen"]) . "</td><td>" . e($row["email"]) . "</td><td>" . e($row["opmerking"]) . '</td><td><a href="../aanpassen.php?id="' . e($row["id"]) .
+                        ">Edit</a></td><td><a href='../login/delete.php?id='" . e($row["id"]) . ">Delete</a></td></tr>";
+                }
+            } else {
+                echo "0 results";
+            }
+
+        } else {
+            echo "Not logged in";
+        }
+        ?>
     </table>
     </form>
 </div>
