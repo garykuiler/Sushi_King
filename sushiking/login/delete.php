@@ -1,17 +1,12 @@
 <?php
-//includes database file and connects to db
-/** @var mysqli $db */
 require_once "../includes/dbh.inc.php";
 
 session_start();
-//checks if admin is logged in
-//if admin is not in session
 if(!isset($_SESSION['userUid'])){
     //redirects to login page
     header("Location: ../login.php");
 }
 
-//if submit is clicked
 if (isset($_POST['submit'])) {
     // Delete data from the database
     $query = "DELETE FROM reserveringen WHERE id = " . mysqli_escape_string($conn, $_POST['id']);
@@ -19,10 +14,8 @@ if (isset($_POST['submit'])) {
     //runs query on database, or stop the query if error and show error
     mysqli_query($conn, $query) or die ('Error: '.mysqli_error($conn));
 
-    //Close connection to db
     mysqli_close($conn);
 
-    //Redirect to admin page
     header("Location: dataconn.php");
     exit;
 
@@ -40,8 +33,8 @@ else if(isset($_GET['id'])) {
 
     //if there is exactly one result
     if(mysqli_num_rows($result) == 1) {
-        //fetches data and put data in $commissions to read
-        $commissions = mysqli_fetch_assoc($result);
+        //fetches data and put data in $reserveren to read
+        $reserveren = mysqli_fetch_assoc($result);
     }
     //if not exactly one result
     else {
@@ -67,50 +60,50 @@ else {
 <body>
 <div class="item centerTextAlign">
     <div class="subtitle">
-        Commission ID <?= $id?>
+        Reservering ID <?= $id?>
     </div>
     <form action="" method="post">
-        <table class="rules">
-            <p class="pinkText">Are you sure you want to delete this commission?</p>
+        <table>
+            <p>Weet u zeker of u wilt annuleren?</p>
             <tr>
                 <td>ID</td>
-                <td><?= htmlentities($commissions['id'])?></td>
+                <td><?= htmlentities($reserveren['id'])?></td>
             </tr>
             <tr>
                 <td>Naam</td>
-                <td><?= htmlentities($commissions['naam'])?></td>
+                <td><?= htmlentities($reserveren['naam'])?></td>
             </tr>
             <tr>
                 <td>Telefoonnummer</td>
-                <td><?= htmlentities($commissions['telefoonnummer'])?></td>
+                <td><?= htmlentities($reserveren['telefoonnummer'])?></td>
             </tr>
             <tr>
                 <td>Datum</td>
-                <td><?= htmlentities($commissions['datum'])?></td>
+                <td><?= htmlentities($reserveren['datum'])?></td>
             </tr>
             <tr>
                 <td>Tijd</td>
-                <td><?= htmlentities($commissions['tijd'])?></td>
+                <td><?= htmlentities($reserveren['tijd'])?></td>
             </tr>
             <tr>
                 <td>Personen</td>
-                <td><?= htmlentities($commissions['personen'])?></td>
+                <td><?= htmlentities($reserveren['personen'])?></td>
             </tr>
             <tr>
                 <td>Email</td>
-                <td><?= htmlentities($commissions['email'])?></td>
+                <td><?= htmlentities($reserveren['email'])?></td>
             </tr>
 
             <tr>
                 <td>Opmerking</td>
-                <td><?= htmlentities($commissions['opmerking'])?></td>
+                <td><?= htmlentities($reserveren['opmerking'])?></td>
             </tr>
         </table>
 
         <br>
         <br>
-        <a href="dataconn.php">No, go back</a>
-        <input type="hidden" name="id" value="<?= $commissions['id'] ?>"/>
+        <a href="dataconn.php">Terug</a>
+        <input type="hidden" name="id" value="<?= $reserveren['id'] ?>"/>
         <input type="submit" name="submit" value="Yes, delete"/>
     </form>
 </div>

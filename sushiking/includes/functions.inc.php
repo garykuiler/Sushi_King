@@ -83,7 +83,7 @@ function emptyInputLogin($username, $pwd) {
     }
     return $result;
 }
-
+//user login and making a ssession
 function loginUser($conn, $username, $pwd) {
     $uidExist = uidExist($conn, $username, $username);
 

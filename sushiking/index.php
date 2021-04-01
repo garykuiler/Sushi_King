@@ -2,6 +2,7 @@
 <?php require_once 'includes/dbh.inc.php'; ?>
 <?php require_once 'php/add.php';?>
 
+
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/html">
 <head>
@@ -78,7 +79,7 @@
             <div>
                 <label for="opmerking">Opmerking:</label>
 
-                <textarea type="text" id="opmerking" name="opmerking" cols="30" rows="5" maxlength="50" value="<?= htmlentities($opmerking); ?>"></textarea>
+                <textarea type="text" id="opmerking" name="opmerking" cols="30" rows="5" maxlength="50"></textarea>
             </div>
             <div class="knop">
                 <input type="submit" name="submit" value="Reserveer" href="bevestiging.php"/>

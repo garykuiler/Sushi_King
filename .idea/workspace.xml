@@ -25,17 +25,16 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8e187ab5-6b93-4100-aa43-17c56edc2ab7" name="Default Changelist" comment="&quot;includes/logout.inc.php&quot; toegevoegd zodat de user kan uitloggen.&#10;&#10;&quot;login/dataconn.php&quot; van PDO naar mysqli verandert + voorzien van xss beveiliging">
+    <list default="true" id="8e187ab5-6b93-4100-aa43-17c56edc2ab7" name="Default Changelist" comment="crud af, delete and edit toegevoegt">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sushiking/aanpassen.php" beforeDir="false" afterPath="$PROJECT_DIR$/sushiking/aanpassen.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sushiking/includes/functions.inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/sushiking/includes/functions.inc.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sushiking/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/sushiking/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sushiking/login/dataconn.php" beforeDir="false" afterPath="$PROJECT_DIR$/sushiking/login/dataconn.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sushiking/login/delete.php" beforeDir="false" afterPath="$PROJECT_DIR$/sushiking/login/delete.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sushiking/login/edit.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sushiking/php/add.php" beforeDir="false" afterPath="$PROJECT_DIR$/sushiking/php/add.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sushiking/php/delete.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sushiking/login/logout.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/sushiking/php/update.php" beforeDir="false" afterPath="$PROJECT_DIR$/sushiking/php/update.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sushiking/signup.php" beforeDir="false" afterPath="$PROJECT_DIR$/sushiking/signup.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -162,7 +161,7 @@
       <workItem from="1612171807029" duration="2468000" />
       <workItem from="1612873376282" duration="43000" />
       <workItem from="1614765314694" duration="652000" />
-      <workItem from="1617137165500" duration="56458000" />
+      <workItem from="1617137165500" duration="69582000" />
     </task>
     <task id="LOCAL-00001" summary="changed readme test">
       <created>1606414603339</created>
@@ -297,7 +296,14 @@
       <option name="project" value="LOCAL" />
       <updated>1617198647842</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="crud af, delete and edit toegevoegt">
+      <created>1617229855770</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1617229855770</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -346,6 +352,7 @@
     <MESSAGE value="Xss beveiliging toegevoegd met de file php/xssSecurity.php. Bij data dat geoutput wordt moet de functie e($voorbeeld) gebruikt voor voor xss beveiliging.&#10;In de file dataconn.php is het met pdo weergegeven en is er een delete button toegevoegd." />
     <MESSAGE value="Sign up gemaakt voor de login systeem.&#10; &#10; Ik ben overgestapt naar Msqli omdat ik niet precies weet hoe ik GOED tegen sql injecties kan beschermen met PDO. &#10; &#10;Een database connect pagina gemaakt &quot;includes/dbh.in.php&quot; en een signup page &quot;signup/php&quot;.&#10;&#10;&quot;includes/function.inc.php&quot; staan de functies &#10;die de gegevens checkt of het is &#10;ingevuld en een functie die het in de data base toevoegd." />
     <MESSAGE value="&quot;includes/logout.inc.php&quot; toegevoegd zodat de user kan uitloggen.&#10;&#10;&quot;login/dataconn.php&quot; van PDO naar mysqli verandert + voorzien van xss beveiliging" />
-    <option name="LAST_COMMIT_MESSAGE" value="&quot;includes/logout.inc.php&quot; toegevoegd zodat de user kan uitloggen.&#10;&#10;&quot;login/dataconn.php&quot; van PDO naar mysqli verandert + voorzien van xss beveiliging" />
+    <MESSAGE value="crud af, delete and edit toegevoegt" />
+    <option name="LAST_COMMIT_MESSAGE" value="crud af, delete and edit toegevoegt" />
   </component>
 </project>

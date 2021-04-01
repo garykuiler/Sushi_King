@@ -1,4 +1,10 @@
 <?php session_start(); ?>
+<?php
+    if(!isset($_SESSION['userUid'])){
+    //redirects to login page
+    header("Location: login.php");
+    }
+?>
 <!DOCTYPE html>
 <html>
 

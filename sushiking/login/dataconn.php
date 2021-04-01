@@ -15,7 +15,7 @@
 
         //fetch result and put it in array
         while ($row = mysqli_fetch_assoc($result)){
-            $commissions[] = $row;
+            $reserveren[] = $row;
         }
         mysqli_close($conn);
 ?>
@@ -31,29 +31,29 @@
     <form method="post" action="">
     <table class="adminTable">
         <tr>
-            <th>id</th>
-            <th>naam</th>
-            <th>telefoonnummer</th>
+            <th>ID</th>
+            <th>Naam</th>
+            <th>Telefoonnummer</th>
+            <th>Datum</th>
+            <th>Tijd</th>
+            <th>Personen</th>
             <th>email</th>
-            <th>personen</th>
-            <th>tijd</th>
-            <th>datum</th>
-            <th>opmerking</th>
+            <th>Opmerking</th>
             <th colspan="4"></th>
             <th><a href="../includes/logout.inc.php">Log out</th>
         </tr>
         <?php
         //reads array and puts in table
-        foreach($commissions as $value){ ?>
+        foreach($reserveren as $value){ ?>
             <tr>
-                <td><?= htmlentities($value["id"])?></td>
-                <td><?= htmlentities($value["naam"])?></td>
-                <td><?= htmlentities($value["telefoonnummer"])?></td>
-                <td><?= htmlentities($value["datum"])?></td>
-                <td><?= htmlentities($value["tijd"])?></td>
-                <td><?= htmlentities($value["personen"])?></td>
-                <td><?= htmlentities($value["email"])?></td>
-                <td><?= htmlentities($value["opmerking"])?></td>
+                <td><?= e($value["id"])?></td>
+                <td><?= e($value["naam"])?></td>
+                <td><?= e($value["telefoonnummer"])?></td>
+                <td><?= e($value["datum"])?></td>
+                <td><?= e($value["tijd"])?></td>
+                <td><?= e($value["personen"])?></td>
+                <td><?= e($value["email"])?></td>
+                <td><?= e($value["opmerking"])?></td>
                 <td><a href="../aanpassen.php?id=<?= $value['id'] ?>">Edit</a></td>
                 <td><a href="delete.php?id=<?= $value['id'] ?>">Delete</a></td>
             </tr>
